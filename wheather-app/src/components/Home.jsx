@@ -10,7 +10,7 @@ import haze from "../assets/png/haze.png";
 import mist from "../assets/svg/mist-svgrepo-com (1).svg";
 import thunderRainy from "../assets/svg/thunderstorm-rainy.svg";
 import snow from "../assets/svg/snow.svg";
-import bgImage from "../assets/jpg/bg.jpg"
+import bgImage from "../assets/jpg/bg.jpg";
 
 function Home({ data }) {
   const city = data && data.name;
@@ -81,7 +81,11 @@ function Home({ data }) {
   return (
     <section
       className={`flex w-screen h-screen items-center justify-center backdrop-blur-lg`}
-      style={{backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <h1
         className={`${

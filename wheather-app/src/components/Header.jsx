@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
-function Header({ setData,data }) {
+function Header({ setData, data }) {
   const [city, setCity] = useState("");
   const search = () => {
     toast.loading("Searching...");
